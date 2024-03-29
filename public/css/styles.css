@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap');
+
+html {
+  font-family: 'Trispace', sans-serif;
+  color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: green;
+}
+
+.site-header{
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #475569;
+  margin-right:2rem;
+}
+
+.nav-link:hover{
+  color: green;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.page-title{
+  text-align: center;
+  padding: 2rem;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+#apod-container {
+  margin-top: 20px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 20px;
+}
+#apod-title{
+  font-size:26px;
+  margin-bottom:1rem;
+}
+#apod-info {
+  font-size: 18px;
+  margin-bottom:1rem;
+}
+#apod-picture {
+  width: 100%;
+  margin-bottom:2rem;
+}
+
+#apod-explanation {
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+#news-container {
+    gap: 10px;
+    padding: 2rem;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.news-card{
+  max-width: 400px;
+  box-shadow: 17px 17px 25px 1px rgba(0,0,0,0.16);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 2rem;
+  background: #ffffff;
+}
+.news-card img{
+  min-height: 210px;
+  max-height: 210px;
+  background-color: #f4f4f4;
+}
+.news-card h2{
+  font-size:16px;
+}
+.news-card a{
+  color:inherit;
+  text-decoration: none;
+}
+.news-published_at{
+  display: flex;
+  align-items: center;
+  color:#a5a1a1;
+  font-size:12px;
+}
+.news-summary p{
+  margin:0px;
+  margin-right:0.6rem;
+  font-size: 14px;
+}
+
+/* HOMEPAGE */
+.custom-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.video-bg {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.text-container {
+  position: relative;
+  z-index: 2;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-light {
+  color: #f8f9fa; /* Change color as needed */
+}
+
+.col-md-8 {
+  width: 66.66667%; /* Adjust as needed */
+}
+
+.offset-md-2 {
+  margin-left: 16.66667%; /* Adjust as needed */
+}
+
+.lc-block {
+  margin-bottom: 1rem; /* Adjust as needed */
+}
+
+.page-subtitle {
+  font-size: 1.25rem; /* Adjust as needed */
+}
+
+.svg-icon {
+  width: 4em;
+  height: 4em;
+  fill: currentColor;
+}
+
+/* Add any additional styles for SVG icons if needed */

@@ -1,0 +1,15 @@
+extends common/layout 
+
+block layout-content 
+
+    h1.page-title NASA News
+    #news-container 
+      each article in newsData
+        .news-card 
+          a(href=`${article.url}`)
+            img(src=article.image_url, alt=article.title)
+            h2#news-title #{article.title}
+          .news-published_at
+            p Published: #{article.published_at}
+          .news-summary
+            p #{article.summary}

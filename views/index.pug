@@ -1,0 +1,16 @@
+extends common/layout
+
+block layout-content 
+    .position-relative.overflow-hidden.custom-container
+        .d-flex.min-vh-100.video-container
+            video.video-bg(autoplay='', preload='', muted='', loop='', playsinline='', style='z-index:1;object-fit: cover; object-position: 50% 50%;')
+                source(src='/img/video2.mp4', type='video/mp4')
+            .text-container.align-self-center.text-center.text-light.col-md-8.offset-md-2
+                .lc-block
+                    div
+                        h1.page-title Welcome to SpaceYZ!
+                .lc-block
+                    div
+                        p.page-subtitle Check out one of the most popular topics at NASA: Astronomy Picture of the Day and
+                        p.page-subtitle Get an overview of the latest SpaceYZ news, from various sources!
+

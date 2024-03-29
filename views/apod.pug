@@ -1,0 +1,14 @@
+extends common/layout
+
+block layout-content
+  .container
+    h1.page-title Astronomy Picture of the Day
+    //-label(for='datepicker') Select Date: 
+    //-input(type='date', id='datepicker')
+    #apod-container
+      #apod-details
+        h2#apod-title #{picData.title}
+        p#apod-info Published: #{picData.date} by #{picData.copyright}
+        p#apod-explanation #{picData.explanation}
+      img#apod-picture(src=picData.url, alt=picData.title) 
+
