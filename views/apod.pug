@@ -3,8 +3,11 @@ extends common/layout
 block layout-content
   .container
     h1.page-title Astronomy Picture of the Day
-    //-label(for='datepicker') Select Date: 
-    //-input(type='date', id='datepicker')
+    p.page-subtitle Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.
+    p.page-subtitle This app uses the NASA APOD API and represents the best atrophotographic photo of NASA resources every day!
+    #apod-datepicker
+      label(for='datepicker') Select Date: 
+      input(type='date', id='datepicker')
     #apod-container
       #apod-details
         h2#apod-title #{picData.title}

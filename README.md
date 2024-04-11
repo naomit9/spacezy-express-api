@@ -13,6 +13,7 @@ Using NASA API and Space News API, this Express app allows users to view Astrono
 * Select date in the calendar to view Astronomy Picture of the Day from that date
 * Create a database on MongoDB to store user comments about the picture
 * Render all news and have search/filter functions
+* Use WeatherAPI and NASA API to get Mars weather and compare weather between a selected city and Mars
 
 ## Built with
 * Express.js

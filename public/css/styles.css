@@ -67,6 +67,9 @@ a {
   grid-template-columns: 1fr 1fr; /* Two columns with equal width */
   gap: 20px;
 }
+#apod-datepicker {
+  margin: 2rem;
+}
 #apod-title{
   font-size:26px;
   margin-bottom:1rem;
@@ -174,6 +177,7 @@ a {
 
 .page-subtitle {
   font-size: 1.25rem; /* Adjust as needed */
+  text-align:center;
 }
 
 .svg-icon {
